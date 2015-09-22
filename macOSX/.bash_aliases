@@ -15,3 +15,6 @@ alias gpull='git pull origin'
 alias gpush='git push origin'
 alias gs='git status'
 alias gstash='git stash'
+
+## Sublime Text ##
+alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
