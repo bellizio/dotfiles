@@ -13,6 +13,7 @@ alias gf='git fetch'
 alias gm='git merge'
 alias gpull='git pull origin'
 alias gpush='git push origin'
+alias gr='git rm'
 alias gs='git status'
 alias gstash='git stash'
 
