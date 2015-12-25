@@ -1,4 +1,14 @@
+# misc
 .DS_Store
+*.log
 
-bower_components/
+# third party dependencies
 node_modules/
+bower_components/
+
+# build directories
+dev/
+dist/
+
+# editor files
+*.sublime-workspace
