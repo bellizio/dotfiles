@@ -3,6 +3,9 @@
 # Clear screen
 alias c='clear'
 
+# Reload shell
+alias reload='. ~/.bashrc'
+
 ## Git ##
 alias ga='git add'
 alias gb='git branch'
