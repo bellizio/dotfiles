@@ -1,7 +1,7 @@
 #!usr/bin/env bash
 
 # Command prompt config
-PS1="\W $ "
+PS1='\W$(__git_ps1 " (%s)") \$ '
 
 # Required for rbenv
 eval "$(rbenv init -)"
@@ -13,4 +13,9 @@ export NVM_DIR="/usr/local/opt/nvm"
 # Reference bash aliases if present
 if [ -f ~/.bash_aliases ]; then
 . ~/.bash_aliases
+fi
+
+# Reference git prompt if present
+if [ -f ~/.git-prompt.sh ]; then
+. ~/.git-prompt.sh
 fi
