@@ -1,7 +1,7 @@
 #!usr/bin/env bash
 
 # Command prompt config
-PS1='\W$(__git_ps1 " (%s)") \$ '
+PS1='\W\[\e[0;32m\]$(__git_ps1 " (%s)")\[\e[m\] \$ '
 
 # Required for rbenv
 eval "$(rbenv init -)"
