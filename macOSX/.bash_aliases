@@ -9,6 +9,7 @@ alias reload='. ~/.bashrc'
 ## Git ##
 alias ga='git add'
 alias gb='git branch'
+alias gbd="git branch -D"
 alias gc='git commit -m'
 alias gco='git checkout'
 alias gd='git diff'
