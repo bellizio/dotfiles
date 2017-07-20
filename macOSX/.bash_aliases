@@ -20,5 +20,10 @@ alias gr='git rm'
 alias gs='git status'
 alias gstash='git stash'
 
+## Ionic / Cordova ##
+alias ic='ionic cordova'
+alias ice='ionic cordova emulate -l'
+alias icr='ionic cordova run -l'
+
 ## Sublime Text ##
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
