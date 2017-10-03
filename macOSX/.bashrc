@@ -22,3 +22,10 @@ fi
 if [ -f ~/.git-prompt.sh ]; then
 . ~/.git-prompt.sh
 fi
+
+# Reference .functions if present
+if [ -f ~/.functions ]; then
+. ~/.functions
+fi
+
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
