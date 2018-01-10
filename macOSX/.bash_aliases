@@ -20,6 +20,9 @@ alias gr='git rm'
 alias gs='git status'
 alias gstash='git stash'
 
+## npm ##
+alias ngl='npm ls -g --depth=0'
+
 ## Ionic / Cordova ##
 alias ic='ionic cordova'
 alias ice='ionic cordova emulate -l'
