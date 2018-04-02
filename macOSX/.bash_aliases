@@ -23,6 +23,9 @@ alias gstash='git stash'
 ## npm ##
 alias ngl='npm ls -g --depth=0'
 
+## yarn ##
+alias ygl='yarn global list'
+
 ## Ionic / Cordova ##
 alias ic='ionic cordova'
 alias ice='ionic cordova emulate -l'
