@@ -3,15 +3,12 @@
 # Command prompt config
 PS1='\W\[\e[0;32m\]$(__git_ps1 " (%s)")\[\e[m\] 🌮  '
 
-# Required for rbenv
-eval "$(rbenv init -)"
-
 # Required for nvm
-export NVM_DIR="/usr/local/opt/nvm"
+export NVM_DIR="$HOME/.nvm"
+# This loads nvm
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-
-# Increase ulimit
-ulimit -n 1024
+# This loads nvm bash_completion
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # Reference bash aliases if present
 if [ -f ~/.bash_aliases ]; then
@@ -27,5 +24,3 @@ fi
 if [ -f ~/.functions ]; then
 . ~/.functions
 fi
-
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
