@@ -26,11 +26,5 @@ alias ngl='npm ls -g --depth=0'
 ## yarn ##
 alias ygl='yarn global list'
 
-## Ionic / Cordova ##
-alias ic='ionic cordova'
-alias ice='ionic cordova emulate -l'
-alias icr='ionic cordova run -l'
-alias icb='ionic cordova build'
-
 ## Sublime Text ##
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
