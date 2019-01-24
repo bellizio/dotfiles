@@ -15,7 +15,7 @@ if [ -f ~/.bash_aliases ]; then
 . ~/.bash_aliases
 fi
 
-# # Reference git completion if present
+# Reference git completion if present
 if [ -f ~/.git-completion.bash ]; then
 . ~/.git-completion.bash
 fi
@@ -28,4 +28,9 @@ fi
 # Reference .functions if present
 if [ -f ~/.functions ]; then
 . ~/.functions
+fi
+
+# Set the tab title in iTerm to the current working directory
+if [ $ITERM_SESSION_ID ]; then
+  export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
 fi
