@@ -6,7 +6,6 @@
 # third party dependencies
 node_modules/
 bower_components/
-jspm_packages/
 
 # build directories
 build/
