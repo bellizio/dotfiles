@@ -25,7 +25,7 @@ if [ -f ~/.git-prompt.sh ]; then
 . ~/.git-prompt.sh
 fi
 
-# Reference .functions if present
+# Reference functions if present
 if [ -f ~/.functions ]; then
 . ~/.functions
 fi
@@ -33,4 +33,9 @@ fi
 # Set the tab title in iTerm to the current working directory
 if [ $ITERM_SESSION_ID ]; then
   export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
+fi
+
+# Reference iterm2_shell_integration if present
+if [ -f ~/.iterm2_shell_integration.bash ]; then
+. ~/.iterm2_shell_integration.bash
 fi
