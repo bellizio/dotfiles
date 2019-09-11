@@ -4,6 +4,24 @@ function lazygit() {
   git push
 }
 
+function clone() {
+  git clone $1
+  cd $(basename ${1%.*})
+  if test -f "./yarn.lock"; then
+    echo "..."
+    echo "Found yarn.lock...installing dependencies via yarn"
+    echo "..."
+    yarn install
+    return
+  fi
+  if test -f "./package.json"; then
+    echo "..."
+    echo "Found package.json...installing dependencies via npm"
+    echo "..."
+    npm install
+  fi
+}
+
 function upgrade-nvm() {
   (
     cd "$NVM_DIR"
