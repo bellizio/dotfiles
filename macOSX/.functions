@@ -19,6 +19,7 @@ function clone() {
     echo "Found package.json...installing dependencies via npm"
     echo "..."
     npm install
+    return
   fi
 }
 
