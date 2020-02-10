@@ -9,7 +9,7 @@ export ZSH="/Users/devonbellizio/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="agnoster-og"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -86,8 +86,12 @@ prompt_context() {}
 
 # Override prompt_dir segment in the agnoster theme
 prompt_dir() {
-  prompt_segment blue $CURRENT_FG '%c'
+  prompt_segment blue $PRIMARY_FG '%c'
 }
+
+# Disable sharing of command history between terminal tabs/windows
+unsetopt inc_append_history
+unsetopt share_history
 
 # Reference functions if present
 if [ -f ~/.functions ]; then
