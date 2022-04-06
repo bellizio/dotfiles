@@ -139,12 +139,12 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Required for nvm
-export NVM_DIR="$HOME/.nvm"
-# This loads nvm
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-# This loads nvm bash_completion
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-
 # Put Homebrew in path
 export PATH=/opt/homebrew/bin:$PATH
+
+# Load node version automatically via fnm
+# https://github.com/Schniz/fnm#shell-setup
+eval "$(fnm env --use-on-cd)"
+
+# Load rbenv automatically
+eval "$(rbenv init - zsh)"
