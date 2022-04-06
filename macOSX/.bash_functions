@@ -35,6 +35,7 @@ function keygen() {
   x=$(ps -A | openssl sha1 | head -c 32 | pbcopy); echo $x
 }
 
+# https://iterm2.com/documentation-scripting-fundamentals.html
 function iterm2_print_user_vars() {
   iterm2_set_user_var nodeVersion $(node -v)
 }
