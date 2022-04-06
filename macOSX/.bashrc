@@ -15,6 +15,11 @@ if [ -f ~/.bash_aliases ]; then
 . ~/.bash_aliases
 fi
 
+# Reference functions if present
+if [ -f ~/.bash_functions ]; then
+. ~/.bash_functions
+fi
+
 # Reference git completion if present
 if [ -f ~/.git-completion.bash ]; then
 . ~/.git-completion.bash
@@ -23,11 +28,6 @@ fi
 # Reference git prompt if present
 if [ -f ~/.git-prompt.sh ]; then
 . ~/.git-prompt.sh
-fi
-
-# Reference functions if present
-if [ -f ~/.functions ]; then
-. ~/.functions
 fi
 
 # Set the tab title in iTerm to the current working directory
