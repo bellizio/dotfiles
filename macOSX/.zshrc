@@ -142,9 +142,13 @@ fi
 # Put Homebrew in path
 export PATH=/opt/homebrew/bin:$PATH
 
-# Load node version automatically via fnm
-# https://github.com/Schniz/fnm#shell-setup
-eval "$(fnm env --use-on-cd)"
+if command-exists fnm; then
+  # Load node version automatically via fnm
+  # https://github.com/Schniz/fnm#shell-setup
+  eval "$(fnm env --use-on-cd)"
+fi
 
-# Load rbenv automatically
-eval "$(rbenv init - zsh)"
+if command-exists rbenv; then
+  # Load rbenv automatically
+  eval "$(rbenv init - zsh)"
+fi
