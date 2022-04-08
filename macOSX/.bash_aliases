@@ -25,6 +25,3 @@ alias ngl='npm ls -g --depth=0'
 
 ## yarn ##
 alias ygl='yarn global list'
-
-## Sublime Text ##
-alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
