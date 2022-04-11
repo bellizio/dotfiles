@@ -152,3 +152,8 @@ if command-exists rbenv; then
   # Load rbenv automatically
   eval "$(rbenv init - zsh)"
 fi
+
+if command-exists pyenv; then
+  # Load pyenv automatically
+  eval "$(pyenv init --path)"
+fi
