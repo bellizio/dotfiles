@@ -4,7 +4,7 @@
 alias c='clear'
 
 # Reload shell
-alias reload='. ~/.bashrc'
+alias reload='. ~/.zshrc'
 
 ## Git ##
 alias ga='git add'
