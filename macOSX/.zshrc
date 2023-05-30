@@ -78,7 +78,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Load the Pure prompt
 # https://github.com/sindresorhus/pure#manually
-fpath+=$HOME/.zsh/pure
+fpath+=("$(brew --prefix)/share/zsh/site-functions")
 autoload -U promptinit; promptinit
 prompt pure
 
@@ -148,12 +148,12 @@ if command-exists fnm; then
   eval "$(fnm env --use-on-cd)"
 fi
 
-if command-exists rbenv; then
-  # Load rbenv automatically
-  eval "$(rbenv init - zsh)"
-fi
-
 if command-exists pyenv; then
   # Load pyenv automatically
   eval "$(pyenv init --path)"
+fi
+
+if command-exists rbenv; then
+  # Load rbenv automatically
+  eval "$(rbenv init - zsh)"
 fi
