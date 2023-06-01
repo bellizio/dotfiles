@@ -76,6 +76,9 @@ source $ZSH/oh-my-zsh.sh
 
 ##### User Configuration #####
 
+# Put Homebrew in path
+export PATH=/opt/homebrew/bin:$PATH
+
 # Load the Pure prompt
 # https://github.com/sindresorhus/pure#manually
 fpath+=("$(brew --prefix)/share/zsh/site-functions")
@@ -138,9 +141,6 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# Put Homebrew in path
-export PATH=/opt/homebrew/bin:$PATH
 
 if command-exists fnm; then
   # Load node version automatically via fnm
